@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="ikbal">writing minggu 3</h1>
+    <h1>fetch Data</h1>
+    <div class="a">
+        terdapat 3 fitur yang selalu dipakai ketika menggunakan JavaScript. kita perlu menjalankan eksekusi kode secara “asinkronus” ke dalam “event loop” dari proses utama JavaScript itu sendiri yaitu :<br>
+
+- Promise<br>
+- CallBack<br>
+- Await<br>
+
+        <p>Metode fetch() dalam JavaScript digunakan untuk meminta ke server dan memuat informasi di halaman web.
+            Permintaan dapat berupa API apa pun yang mengembalikan data berformat JSON atau XML. Metode ini disebut
+            promise.</p>
+    </div>
+    <div>
+        <h1>Https</h1>
+        <ul>
+            <li> Get => Mengambil data</li>
+            <li>Post => Mengirim Data</li>
+            <li>Put => Mengirim/Memperbaharui/update</li>
+            <li>Patch => update = request tidak aman (Mengirim data secara parsial)</li>
+            <li>Delete => Menghapus Data</li>
+        </ul>
+    </div>
+    <div>
+        <h1>cara fetch data</h1>
+        <img src="1_vmb9T17J3gy0lt7IzNvhzA.png" width="400px" height="400px">
+    </div>
+    <div>
+        fetch ("https://pokeapi.co/api/v2/pokemon/pikachu/", {
+            method: "GET"
+        })<br>
+    
+        .then ((response) => {
+            return response.json();
+        })<br>
+        .then((data) => {
+            console.log(data)
+        })<br>
+        .catch ((error) => {
+            console.log(error);
+        });<br>
+    </div>
+    <div><br><br>
+        <h1 class="a">web responsif</h1>
+        <p>web responsif adalah sebuah teknik atau metode bagi web designer untuk membuat suatu layout website yang
+            dapat menyesuaikan diri sesuai dengan ukuran layar pengguna.</p>
+
+    </div>
+    <div>
+        Jenis Media Query untuk responsive web design umumnya hanya menggunakan 2 jenis media query yaitu **main-width** dan **mas-width**.<br>
+
+    Contoh:
+
+    @media screnn and (min-width: your pixel){
+
+    }
+    @media screnn and (max-width: your pixel){
+
+    }<br><br>
+
+> media query digunakan untuk membuat beberapa styles tergantung pada jenis device. terdapat 2 cara dalam menggunakan media query
+
+Cara ke - 1:
+membuat file css berbeda untuk masing-masing device
+
+Cara ke - 2:
+menggabungkan 1 file css untuk setting styling berbagai device.<br><br>
+
+### Breckpoint
+
+> perubahan yang terjadi pada tampilan saat berganti device atau ukuran width disebut breckpoint.<br><br>
+
+### complex Breackpoint Media Query
+
+> jika menginginkan tampilan yang ingin diterapkan pada range ukuran device tertentu. kita bisa membuat menjadi range media query<br><br>
+
+    contoh :
+
+    body{
+    background-color: white ;
+    }
+
+    @media screen and (min-width: 500px) and (min-width: 700px)
+    body {
+    background-color: aquamarine ;
+    }<br><br>
+
+    </div>
+    <div>
+        <h1>prinsip-prinsip web responsip</h1>
+        <ul>
+            <li>Fluid Grid => rid atau garis-garis batas yang menentukan letak suatu komponen dalam desain, namun dapat
+                berubah-ubah sesuai dengan ukuran tampilannya.</li>
+            <li> Media queries => memungkinkan website untuk dapat mengambil data mengenai ukuran layar yang digunakan
+                untuk menampilkan konten.</li>
+            <li>Responsive media => memastikan bahwa media seperti foto dan video dapat ditampilkan dengan baik di
+                berbagai ukuran layar.</li>
+
+        </ul>
+    </div>
+    <div>
+        <h1>keuntungan responsif</h1>
+        <ul>
+            <li>Dapat diakses oleh berbagai device dengan ukuran layar berbeda-beda</li>
+            <li> Lebih hemat biaya</li>
+            <li>emudahan dalam maintenance</li>
+            <li>Halaman yang lebih cepat dibuka</li>
+        </ul>
+    </div><br><br>
+    <div>
+        <h1>boostrap</h1>
+        <p>dalah sebuah framework HTML, CSS, dan JavaScript yang berfokus untuk menyederhanakan pengembangan halaman web
+            atau website. </p>
+    </div>
+    <div>
+        <h1>cara memanggil boostrap</h1>
+        <ul>
+            <li>online => dengan memanggi lngsng dari boostrap dan harus memiliki koneksi utuk menggunakannya<br>
+            keuntungannya bila aa pembaruan, maka kita juga akan iperbarui
+            </li>
+            <li>offline => dengan mendownload dan membuat folder baru dan dimasukkan ke dalam folder yang kita kerjakan</li>
+        </ul>
+    </div>
+    <div>
+        <h1>keuntungan menggunakan boostrap</h1>
+        <li> Responsif</li>
+        <li> Kemudahan penggunaan</li>
+        <li>Pengembangan cepat</li>
+        <li>Dukungan komunitas yang besar</li>
+        <li>Konsisten</li>
+    </div>
+</body>
+
+</html>
